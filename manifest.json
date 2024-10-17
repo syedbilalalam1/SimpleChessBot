@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "SimpleChessBot - Made by syedbilalalam",
+  "version": "0.1",
+  "icons": { "16": "icon.png",
+  "48": "icon.png",
+ "128": "icon.png" },
+ "browser_specific_settings": {
+  "gecko": {
+    "id": "gbeast872@gmail.com"
+  }
+},
+  "description": "Win your chess games, ez.",
+  "content_scripts": [
+    {
+      "js": ["scripts/main.js"],
+      "matches": [
+        "https://www.chess.com/*",
+        "https://chess.com/*"
+      ]
+    }
+  ]
+}
